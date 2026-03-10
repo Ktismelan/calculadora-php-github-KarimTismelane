@@ -1,21 +1,21 @@
 <?php
-$op = $_POST['op'];
-$n1 = $_POST['n1'];
-$n2 = $_POST['n2'];
+$operacion = $_POST['op'];
+$primerNumero = $_POST['n1'];
+$segundoNumero = $_POST['n2'];
 
-if ($op == "s") {
-    $res = $n1 + $n2;
-} else if ($op == "r") {
-    $res = $n1 - $n2;
-} else if ($op == "m") {
-    $res = $n1 * $n2;
-} else if ($op == "d") {
-    if ($n2 != 0) {
-        $res = $n1 / $n2;
+if ($operacion == "s") {
+    $resultado = $primerNumero + $segundoNumero;
+} else if ($operacion == "r") {
+    $resultado = $primerNumero - $segundoNumero;
+} else if ($operacion == "m") {
+    $resultado = $primerNumero * $segundoNumero;
+} else if ($operacion == "d") {
+    if ($segundoNumero != 0) {
+        $resultado = $primerNumero / $segundoNumero;
     } else {
-        $res = "Error";
+        $resultado = "Error";
     }
 }
 
-echo $res;
+echo $resultado;
 ?>

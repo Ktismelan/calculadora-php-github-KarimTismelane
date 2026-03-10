@@ -15,6 +15,8 @@ function calcular($operacion, $a, $b) {
             } else {
                 return "Error";
             }
+        default:
+            return "Operacion no valida";
     }
 }
 
